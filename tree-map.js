@@ -1,3 +1,19 @@
+
+//input- tree mapp
+//output- higher order function
+//has a mapping function as the only argument
+//should go through the tree and pass each nodes values
+//should also create a new tree with the results
+// the map has to return a tree with the same structure and different values
+// should not change the tree
+
+
+ var tree = function map();
+  var root1 = same Tree(1);
+  var branch2 = root1.addChild(2)
+
+ 
+
 /*Tree Map
 
 - [ ] Implement a higher order function, `map`, on the given `Tree` class using pseudoclassical instantiation
