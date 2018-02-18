@@ -56,3 +56,13 @@ MDN
     this.children.push(node);
     return node;
   };
+  Tree.prototype.map = function(cb){
+    let node = Array.from(arguments)[1] || new Tree(cb(this.value));
+    this.children.forEach((tree, i) => {
+      node.addChild(cb(tree.value));
+      if(tree.children.length){
+        tree.map(cb, node.children[1]);
+      }
+  });
+  return node;
+};
