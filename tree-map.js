@@ -8,11 +8,6 @@
 // should not change the tree
 
 
- var tree = function map();
-  var root1 = same Tree(1);
-  var branch2 = root1.addChild(2)
-
- 
 
 /*Tree Map
 
@@ -51,3 +46,8 @@ MDN
   *  newTree.children[1].children[1].value // 14
   *  root1.value // still 1
   */
+
+  var Tree = function(value){
+    this.value = value;
+    this.children = [];
+  };
