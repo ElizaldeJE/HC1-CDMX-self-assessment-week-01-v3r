@@ -51,3 +51,8 @@ MDN
     this.value = value;
     this.children = [];
   };
+  Tree.prototype.addChild = function(value){
+    var node = new Tree(value);
+    this.children.push(node);
+    return node;
+  };
